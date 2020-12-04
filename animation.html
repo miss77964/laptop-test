@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            width: 50px;
+            height: 50px;
+            background: red;
+
+        }
+
+        #demo.begin {
+            animation: xxx 2s linear 1s infinite alternate;
+        }
+
+        @keyframes xxx {
+            0% {
+                transform: none;
+            }
+
+            66% {
+                transform: translateX(150px);
+            }
+
+            100% {
+                transform: translateX(150px) transform: translateY(150px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button id="start">开始</button>
+
+    <script>
+        start.onclick = function () {
+            demo.classList.add('begin');
+        }
+    </script>
+</body>
+
+</html>
